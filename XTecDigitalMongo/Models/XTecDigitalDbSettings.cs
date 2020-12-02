@@ -9,6 +9,7 @@ namespace XTecDigitalMongo.Models
     {
         public string Profesores { get; set; }
         public string Estudiantes { get; set; }
+        public string Admins { get; set; }
         public string ConnectionString { get; set; }
         public string DatabaseName { get; set; }
     }
@@ -17,6 +18,7 @@ namespace XTecDigitalMongo.Models
     {
         string Profesores { get; set; }
         string Estudiantes { get; set; }
+        string Admins { get; set; }
         string ConnectionString { get; set; }
         string DatabaseName { get; set; }
     }
