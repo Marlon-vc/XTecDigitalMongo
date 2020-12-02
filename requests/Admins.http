@@ -1,0 +1,14 @@
+### Crear admins
+POST https://127.0.0.1:5001/api/Admin/batch HTTP/2.0
+Content-Type: application/json
+
+[
+    {
+        "User": "pvill",
+        "Pass": "DOSdeJUNIO"
+    },
+    {
+        "User": "mvega",
+        "Pass": "ONCEdeENERO"
+    }
+]

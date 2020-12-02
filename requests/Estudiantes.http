@@ -1,0 +1,41 @@
+### Crear estudiantes
+POST https://127.0.0.1:5001/api/Estudiantes/batch HTTP/2.0
+Content-Type: application/json
+
+[
+    {
+        "Carnet": "2017094282",
+        "Nombre": "Paola",
+        "Correo": "pvillegasch@gmail.com",
+        "Telefono": "83216963",
+        "Pass": "DOSdeJUNIO"
+    },
+    {
+        "Carnet": "2017217080",
+        "Nombre": "Marlon",
+        "Correo": "mvegach2013@gmail.com",
+        "Telefono": "70143773",
+        "Pass": "ONCEdeENERO"
+    },
+    {
+        "Carnet": "2018572565",
+        "Nombre": "Juan",
+        "Correo": "juan@gmail.com",
+        "Telefono": "74826529",
+        "Pass": "123"
+    },
+    {
+        "Carnet": "2018572853",
+        "Nombre": "Misinga",
+        "Correo": "misinga@gmail.com",
+        "Telefono": "12345678",
+        "Pass": "MISINGA"
+    },
+    {
+        "Carnet": "2019582752",
+        "Nombre": "Furia",
+        "Correo": "furia@gmail.com",
+        "Telefono": "87654321",
+        "Pass": "FURIA"
+    }
+]

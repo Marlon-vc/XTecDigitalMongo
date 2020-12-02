@@ -1,0 +1,30 @@
+### Crear profesores
+POST https://127.0.0.1:5001/api/Profesores/batch HTTP/2.0
+Content-Type: application/json
+
+[
+    {
+        "Cedula": "402390083",
+        "Nombre": "Paola",
+        "Correo": "pvillegasch@gmail.com",
+        "Pass": "DOSdeJUNIO"
+    },
+    {
+        "Cedula": "122200589521",
+        "Nombre": "Marlon",
+        "Correo": "mvegach2013@gmail.com",
+        "Pass": "ONCEdeENERO"
+    },
+    {
+        "Cedula": "827458623",
+        "Nombre": "Misinga",
+        "Correo": "misingach@gmail.com",
+        "Pass": "misinga"
+    },
+    {
+        "Cedula": "583653921",
+        "Nombre": "Furia",
+        "Correo": "furia2019@gmail.com",
+        "Pass": "furia"
+    }
+]
