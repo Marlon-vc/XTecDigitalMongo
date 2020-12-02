@@ -52,6 +52,17 @@ namespace XTecDigitalMongo.Controllers
             return CreatedAtRoute("Default", new { carnet = estudiante.Carnet}, estudiante);
         }
 
+        [HttpPost("batch")]
+        public IActionResult PostList(List<Estudiante> estudiantes)
+        {
+            foreach (var estudiante in estudiantes)
+            {
+                estudiante.Pass = Encryption.Md5(estudiante.Pass);
+            }
+            _service.Create(estudiantes);
+            return Ok(estudiantes);
+        }
+
         // PUT api/<EstudiantesController>/5
         [HttpPut("{carnet}")]
         public IActionResult Put(string carnet, Estudiante estudiante)
