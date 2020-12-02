@@ -36,6 +36,7 @@ namespace XTecDigitalMongo
 
             services.AddSingleton<ProfesorService>();
             services.AddSingleton<EstudianteService>();
+            services.AddSingleton<AdminService>();
 
             services.AddControllers();
         }
