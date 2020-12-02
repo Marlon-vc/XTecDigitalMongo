@@ -34,6 +34,12 @@ namespace XTecDigitalMongo.Services
             return estudiante;
         }
 
+        public List<Estudiante> Create(List<Estudiante> estudiantes)
+        {
+            _estudiantes.InsertMany(estudiantes);
+            return estudiantes;
+        }
+
         public void Update(string carnet, Estudiante estudianteIn)
         {
             _estudiantes.ReplaceOne(estudiante => estudiante.Carnet == carnet, estudianteIn);

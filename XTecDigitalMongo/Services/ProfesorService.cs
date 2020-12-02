@@ -35,6 +35,12 @@ namespace XTecDigitalMongo.Services
             return profesor;
         }
 
+        public List<Profesor> Create(List<Profesor> profesores)
+        {
+            _profesores.InsertMany(profesores);
+            return profesores;
+        }
+
         public void Update(string cedula, Profesor profesorIn)
         {
             _profesores.ReplaceOne(profesor => profesor.Cedula == cedula, profesorIn);
